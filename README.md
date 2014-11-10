@@ -10,9 +10,9 @@ This is not supposed to host the actual code for the Kijani Blog and the Kijani 
 Feel free to contribute to this by sending me pull requests.
 
 ## Todos:
-[x] Implement Basic Article Style
-[ ] Fix Heading and Hero Image
-[ ] Finish Sidebar
-[ ] Add Image Captions
-[ ] Add Navigation
-[ ] Restructure Folders
+- [x] Implement Basic Article Style
+- [ ] Fix Heading and Hero Image
+- [ ] Finish Sidebar
+- [ ] Add Image Captions
+- [ ] Add Navigation
+- [ ] Restructure Folders

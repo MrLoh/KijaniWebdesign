@@ -21,7 +21,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Implement Basic Article Style~~
 - [x] ~~Fix Heading and Hero Image~~
 - [x] ~~Restructure Folders~~
-- [ ] Finish Author Section
+- [x] ~~Finish Author Section~~
 - [ ] Finish More Articles Section
 - [ ] Add Image Captions
 - [ ] Add Navigation

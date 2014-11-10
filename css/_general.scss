@@ -28,8 +28,18 @@ picture, figure {
 	color: $green;
 	font-family: "Yummo";
 	font-weight: 700;
-    font-size: 1.15*$em;
+    font-size: 1.8*$em;
     line-height: 1.5*$em;
 	text-transform: uppercase;
-    margin: 1.5*$em 0 0 0;
+    margin: 1.6*$em 0 0 0;
+}
+
+.clearfix {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }

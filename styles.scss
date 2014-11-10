@@ -1,0 +1,128 @@
+$em: 16px;
+@import "colors";
+
+@import "general";
+
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: $em;
+	font-family: sans-serif;
+	line-height: 1.5*$em;
+    color: $black;
+    background-color: $dust5;
+} 
+
+nav {
+	display: none;
+}
+
+header {
+    width: 100%;
+    font-size: $em;
+    height: 30em;
+    overflow-y: hidden;
+    position: relative;
+    top: 0;
+    img.hero {
+        position: absolute;
+        top: 0;
+    }
+    .heading {
+        font-size: $em;
+        width: 100%;
+        max-width: 62em;
+        margin: 0 auto;
+        z-index: 10;
+        margin-top: 20em;
+        h1 {
+            color: $white;
+            font-family: "Bree";
+            font-size: 4*$em;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 62em;
+}
+
+article {
+	width: 100%;
+    font-size: $em;
+	max-width: 40em;
+    float: left;
+    background-color: $white;
+    padding: 1*$em 3*$em 3*$em 3*$em;
+    box-sizing: border-box;
+	h1 {
+        margin-bottom: 1.5*$em;
+        font-family: "Bree";
+		font-size: 3*$em;
+		line-height: 2$em;
+        letter-spacing: -0.02em;
+        display: none;
+	}
+	p {
+        font-family: "Georgia";
+		font-family: "Nimrod MT Std";
+        font-weight: 400;
+		text-align: justify;
+        margin-bottom: 1.5*$em;
+		a {
+			color: $green;
+			cursor: alias;
+            text-decoration: none;
+		}
+		&:first-child:first-letter { 
+			float: left; 
+			color: $green; 
+			font-family: Yummo; 
+			font-weight: 500;
+			text-transform: capitalize;
+			font-size: 5.5*$em; 
+			line-height: 3*$em; 
+			padding: 0.5*$em 0.3*$em 0 0; 
+		}
+    }
+    h2 {
+        font-family: "Bree";
+        font-size: 1.5*$em;
+        font-weight: 600;
+        line-height: 1.5*$em;
+        margin: 0;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+aside {
+    font-size: $em;
+    width: 100%;
+    max-width: 20em;
+    float: right;
+    background-color: $white;
+    padding: 1*$em 2*$em 2*$em 2*$em;
+    box-sizing: border-box;
+    h1, h2, h3 {
+        font-family: "Bree";
+        font-weight: 600;
+        font-size: 1*$em;
+        line-height: 1*$em;
+        margin: 1*$em 0;
+    }
+    p {
+        font-family: "Bree"; 
+        font-weight: 300;
+        font-size: 0.8*$em;
+        line-height: 1*$em;
+        margin-bottom: 1*$em;
+    }
+}

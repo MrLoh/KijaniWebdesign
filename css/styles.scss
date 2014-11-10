@@ -1,6 +1,6 @@
 $em: 16px;
-@import "colors";
 
+@import "colors";
 @import "general";
 
 
@@ -29,6 +29,12 @@ header {
     #hero picture {
         position: absolute;
         top: 0;
+        img {
+            margin: 0 auto;
+            max-width: 2000px;
+            display: block;
+            margin-top: -12%;
+        }
     }
     .heading {
         position: relative;
@@ -102,8 +108,21 @@ article {
         line-height: 1.5*$em;
         margin: 0;
 	}
-	img {
-		width: 100%;
+	figure {
+        img {
+		    width: 100%;
+        }
+        figcaption {
+            font-family: "Bree";
+            font-weight: 300;
+            font-size: 0.8*$em;
+            line-height: 1*$em;
+            padding: 0.5em 1em;
+            background-color: rgba($black,0.7);
+            color: $white;
+            margin-top: -0.6em;
+            display: none;
+        }
 	}
 }
 

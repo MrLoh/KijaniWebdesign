@@ -18,9 +18,10 @@ The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since th
 This does not include font files. To work properly you need to install the Fonts Bree, Nimrod und Yummo. Please contact me, if you need the fonts I can't distribute them publicly.
 
 ## Todos
-- ~~[x] Implement Basic Article Style~~
-- ~~[x] Fix Heading and Hero Image~~
-- [ ] Finish Sidebar
+- [x] ~~Implement Basic Article Style~~
+- [x] ~~Fix Heading and Hero Image~~
+- [x] ~~Restructure Folders~~
+- [ ] Finish Author Section
+- [ ] Finish More Articles Section
 - [ ] Add Image Captions
 - [ ] Add Navigation
-- [ ] Restructure Folders

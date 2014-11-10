@@ -22,6 +22,10 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Fix Heading and Hero Image~~
 - [x] ~~Restructure Folders~~
 - [x] ~~Finish Author Section~~
-- [ ] Finish More Articles Section
+- [x] ~~Finish More Articles Section~~
 - [ ] Add Image Captions
+- [ ] Add Subscribe Section
+- [ ] Add Share Section
 - [ ] Add Navigation
+- [ ] Add Footer
+- [ ] Add Comments

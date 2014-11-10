@@ -26,23 +26,27 @@ header {
     overflow-y: hidden;
     position: relative;
     top: 0;
-    img.hero {
+    #hero picture {
         position: absolute;
         top: 0;
     }
     .heading {
+        position: relative;
         font-size: $em;
         width: 100%;
         max-width: 62em;
         margin: 0 auto;
-        z-index: 10;
         margin-top: 20em;
+        padding: 0 1em;
+        box-sizing: border-box;
+        z-index: 1;
         h1 {
             color: $white;
             font-family: "Bree";
-            font-size: 4*$em;
+            font-size: 5*$em;
             font-weight: 600;
             letter-spacing: -0.01em;
+            line-height: 1;
         }
     }
 }

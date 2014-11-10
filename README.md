@@ -1,4 +1,4 @@
-# Kijani Website Design
+# Kijani Webdesign
 
 ## Description:
 This is a repository to experiment with the design of the [Kijani Blog](http://blog.kijani.co) and also for the general [Kijani Website](http://kijani.co) in the future.

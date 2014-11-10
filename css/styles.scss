@@ -66,10 +66,10 @@ main {
 article {
 	width: 100%;
     font-size: $em;
-	max-width: 40em;
+	max-width: 44em;
     float: left;
     background-color: $white;
-    padding: 1*$em 3*$em 3*$em 3*$em;
+    padding: 1*$em 5*$em 3*$em 5*$em;
     box-sizing: border-box;
 	h1 {
         margin-bottom: 1.5*$em;
@@ -129,38 +129,38 @@ article {
 aside {
     font-size: $em;
     width: 100%;
-    max-width: 23em;
+    max-width: 20em;
     float: right;
     background-color: $white;
     box-sizing: border-box;
     h3 {
         font-family: "Bree";
         font-weight: 600;
-        font-size: 1.2*$em;
+        font-size: 1*$em;
         line-height: 1*$em;
-        margin: 1.5*$em 0 -0.3*$em 0;
+        margin: 1.2*$em 0 -0.3*$em 0;
     }
     p {
         font-family: "Bree"; 
         font-weight: 300;
-        font-size: 0.85*$em;
+        font-size: 0.75*$em;
         line-height: 1*$em;
         margin-bottom: 1*$em;
         text-align: left;
     }
     section {
-        padding: 0 2*$em;
+        padding: 0 1.5*$em;
         padding-bottom: 1.5*$em;
         margin-bottom: 1.5*$em;
-        border-bottom: 0.2*$em solid $green;
+        border-bottom: 2*$em solid $dust5;
     }
     .author {
         figure {
-            width: 6em;
-            height: 9em;
+            width: 5.2em;
+            height: 7.8em;
             float: left;
             overflow: hidden;
-            margin: 1*$em 1em 0 0;
+            margin: 1*$em 0.5*$em 0 0;
             img {
                 width: 150%;
                 margin-left: -30%;
@@ -171,11 +171,8 @@ aside {
         display: none;
     }
     .articles {
-        .title {
-//            text-align: right;
-        }
         div {
-            height: 11em;
+            height: 10em;
             overflow: hidden;
             margin: 1*$em 0;
             position: relative;
@@ -189,7 +186,8 @@ aside {
                 padding: 1*$em;
                 z-index: 1;
                 color: $white;
-                font-size: 2.2*$em;
+                font-size: 1.8*$em;
+                font-weight: 500;
                 line-height: 1.2;
                 text-align: right;
             }

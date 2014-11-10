@@ -29,3 +29,6 @@ This does not include font files. To work properly you need to install the Fonts
 - [ ] Add Navigation
 - [ ] Add Footer
 - [ ] Add Comments
+
+## Current Status
+![Screemshot](screenshot.png)

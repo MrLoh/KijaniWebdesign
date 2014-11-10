@@ -28,6 +28,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [ ] Add Share Section
 - [ ] Add Navigation
 - [ ] Add Footer
+- [ ] Add Scrolling over the Header
 - [ ] Add Comments
 
 ## Current Status

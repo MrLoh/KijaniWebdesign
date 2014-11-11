@@ -1,4 +1,3 @@
 *.css.map
 .sass-cache/*
 stylesheets
-*.css

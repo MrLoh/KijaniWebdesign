@@ -41,7 +41,6 @@ picture, figure {
 	font-weight: 700;
     font-size: 3*$em;
     line-height: 2*$em;
-	text-transform: uppercase;
     margin: 0.7*$em 0 -0.2*$em 0;
 }
 
@@ -53,4 +52,8 @@ picture, figure {
     &:after {
         clear: both;
     }
+}
+
+.light-shadow {
+    box-shadow: 0 0 1px rgba($dust,0.1);
 }

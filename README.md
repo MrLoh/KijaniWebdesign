@@ -23,12 +23,12 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Restructure Folders~~
 - [x] ~~Finish Author Section~~
 - [x] ~~Finish More Articles Section~~
-- [ ] Add Image Captionss
+- [x] ~~Add Scrolling over the Header~~
 - [ ] Add Subscribe Section
+- [ ] Add Image Captionss
 - [ ] Add Share Section
 - [ ] Add Navigation
 - [ ] Add Footer
-- [ ] Add Scrolling over the Header
 - [ ] Add Comments
 
 ## Current Status

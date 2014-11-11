@@ -22,10 +22,11 @@ nav {
 header {
     width: 100%;
     font-size: $em;
-    height: 30em;
+    height: 30*$em;
     overflow-y: hidden;
-    position: relative;
+    position: fixed;
     top: 0;
+    z-index: -1;
     #hero picture {
         position: absolute;
         top: 0;
@@ -36,49 +37,41 @@ header {
             margin-top: -12%;
         }
     }
-    .heading {
-        position: relative;
-        font-size: $em;
-        width: 100%;
-        max-width: 62em;
-        margin: 0 auto;
-        margin-top: 20em;
-        padding: 0 1em;
-        box-sizing: border-box;
-        z-index: 1;
-        h1 {
-            color: $white;
-            font-family: "Bree";
-            font-size: 5*$em;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            line-height: 1;
-        }
-    }
 }
 
 main {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 67em;
+    margin-top: 30*$em;
+    width: 100%;   
+    box-shadow: 0 -2px 2px rgba($dark-gray,0.5);
+    .container{
+        max-width: 67*$em;
+        margin: 0 auto;
+    }
 }
 
 article {
 	width: 100%;
     font-size: $em;
-	max-width: 44em;
+	max-width: 44*$em;
     float: left;
     background-color: $white;
     padding: 1*$em 5*$em 3*$em 5*$em;
     box-sizing: border-box;
     margin: 3*$em 0;
+    box-shadow: 0 0 0.1px rgba($dust,0.1);
 	h1 {
-        margin-bottom: 1.5*$em;
+        width: 67*$em;
+        height: 10*$em;
+        margin: -15*$em 0 7*$em -5*$em;
+        padding: 0 2*$em;
+        box-sizing: border-box;
         font-family: "Bree";
-		font-size: 3*$em;
-		line-height: 2$em;
+        font-size: 5*$em;
+        font-weight: 600;
         letter-spacing: -0.02em;
-        display: none;
+        line-height: 5*$em;
+        color: $white;
+        text-shadow: 2px 2px 2px rgba($dark-gray,0.5);
 	}
 	p {
 //		font-family: "Nimrod MT Std";
@@ -104,8 +97,8 @@ article {
 		}
     }
     h2 {
-//        font-family: "Bree";
-        font-family: "Vollkorn";
+        font-family: "Bree";
+//        font-family: "Vollkorn";
         letter-spacing: -0.02em;
         font-size: 1.5*$em;
         font-weight: 600;
@@ -133,7 +126,7 @@ article {
 aside {
     font-size: $em;
     width: 100%;
-    max-width: 20em;
+    max-width: 20*$em;
     float: right;
     box-sizing: border-box;
     h3 {
@@ -152,10 +145,27 @@ aside {
         text-align: left;
     }
     section {
-        padding: 1.2*$em 1.5*$em;
-//        margin-bottom: 2*$em;
+        padding: 0.2*$em 1.5*$em 0.2*$em 1.5*$em;
         margin: 3*$em 0;
         background-color: $white;
+        box-shadow: 0 0 1px rgba($dust,0.1);
+    }
+    .subscribe {
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        h2 {
+            padding: 1*$em 0;
+            font-family: "Bree";
+            font-weight: 600;
+            font-size: 3*$em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: $white;
+            line-height: 3*$em;
+            text-shadow: 1px 1px 1px rgba($dust,0.1);
+        }
     }
     .author {
         figure {
@@ -170,7 +180,7 @@ aside {
             }
         }
     }
-    .share, .subscribe {
+    .share {
         display: none;
     }
     .articles {
@@ -204,7 +214,7 @@ aside {
         }
         h3 {
             text-align: right;
-            margin: -0.2*$em 0.3*$em 0.5*$em 0;
+            margin: -0.2*$em 0.3*$em 1*$em 0;
         }
     }
 }

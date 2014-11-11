@@ -147,6 +147,10 @@ aside {
     h3.link {
         text-align: right;
         margin: -0.2*$em 0.3*$em 1*$em 0;
+        a:hover {
+            color: $green;
+            text-decoration: none;
+        }
     }
     section {
         padding: 0.2*$em 1.5*$em 0.2*$em 1.5*$em;
@@ -180,7 +184,7 @@ aside {
             box-sizing: border-box;
             width: 6*$em;
             margin: -4*$em 0;
-            img, svg, .icon {
+            svg, .icon {
                 fill: $white;
                 position: absolute;
                 left: 0; right: 0;
@@ -231,8 +235,9 @@ aside {
             position: relative;
             &:hover {
                 .green-overlay:after {
-                    opacity: 0.93;
-                    background: $green3;
+                    opacity: 0.8;
+                    background: $green2;
+                    -webkit-transform: translateZ(0);
                 }
             }
             h3 {

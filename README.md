@@ -32,4 +32,6 @@ This does not include font files. To work properly you need to install the Fonts
 - [ ] Add Comments
 
 ## Current Status
+Visit the page life at: [mrloh.github.io/kijaniwebdesign](http://mrloh.github.io/KijaniWebdesign/)
+
 ![Screemshot](screenshot.png)

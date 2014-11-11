@@ -71,6 +71,7 @@ article {
     background-color: $white;
     padding: 1*$em 5*$em 3*$em 5*$em;
     box-sizing: border-box;
+    margin: 3*$em 0;
 	h1 {
         margin-bottom: 1.5*$em;
         font-family: "Bree";
@@ -80,9 +81,10 @@ article {
         display: none;
 	}
 	p {
-        font-family: "Georgia";
-		font-family: "Nimrod MT Std";
-        font-weight: 400;
+//		font-family: "Nimrod MT Std";
+        font-family: "Volkorn";
+        font-size: 1.2*$em;
+        font-weight: 300;
 		text-align: justify;
         margin-bottom: 1.5*$em;
 		a {
@@ -93,16 +95,18 @@ article {
 		&:first-child:first-letter { 
 			float: left; 
 			color: $green; 
-			font-family: Yummo; 
+			font-family: "Blanch"; 
 			font-weight: 500;
 			text-transform: capitalize;
-			font-size: 5.5*$em; 
+			font-size: 11*$em; 
 			line-height: 3*$em; 
-			padding: 0.5*$em 0.3*$em 0 0; 
+			padding: 0.55*$em 0.05*$em 1.5*$em 0; 
 		}
     }
     h2 {
-        font-family: "Bree";
+//        font-family: "Bree";
+        font-family: "Vollkorn";
+        letter-spacing: -0.02em;
         font-size: 1.5*$em;
         font-weight: 600;
         line-height: 1.5*$em;
@@ -131,7 +135,6 @@ aside {
     width: 100%;
     max-width: 20em;
     float: right;
-    background-color: $white;
     box-sizing: border-box;
     h3 {
         font-family: "Bree";
@@ -143,16 +146,16 @@ aside {
     p {
         font-family: "Bree"; 
         font-weight: 300;
-        font-size: 0.75*$em;
+        font-size: 0.8*$em;
         line-height: 1*$em;
         margin-bottom: 1*$em;
         text-align: left;
     }
     section {
-        padding: 0 1.5*$em;
-        padding-bottom: 1.5*$em;
-        margin-bottom: 1.5*$em;
-        border-bottom: 2*$em solid $dust5;
+        padding: 1.2*$em 1.5*$em;
+//        margin-bottom: 2*$em;
+        margin: 3*$em 0;
+        background-color: $white;
     }
     .author {
         figure {
@@ -171,11 +174,18 @@ aside {
         display: none;
     }
     .articles {
-        div {
+        &>a {
+            display: block;
             height: 10em;
             overflow: hidden;
             margin: 1*$em 0;
             position: relative;
+            &:hover {
+                .green-overlay:after {
+                    opacity: 0.93;
+                    background: $green3;
+                }
+            }
             h3 {
                 display: inline-block;
                 position: absolute;
@@ -191,6 +201,10 @@ aside {
                 line-height: 1.2;
                 text-align: right;
             }
+        }
+        h3 {
+            text-align: right;
+            margin: -0.2*$em 0.3*$em 0.5*$em 0;
         }
     }
 }

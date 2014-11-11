@@ -15,7 +15,7 @@ This repository only includes Sass files, please compile with the latest Sass. T
 
 The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since this is not for actual distribution, let's keep it like that for simplicity sake. 
 
-This does not include font files. To work properly you need to install the Fonts Bree, Nimrod und Yummo. Please contact me, if you need the fonts I can't distribute them publicly.
+This does not include font files. To work properly you need to install the Fonts [Bree](http://www.type-together.com/Bree), [Vollkorn](http://vollkorn-typeface.com/) and [Blanch](http://www.atipus.com/design-identity-blanch-font/). Please contact me, if you need the fonts I can't distribute them publicly.
 
 ## Todos
 - [x] ~~Implement Basic Article Style~~
@@ -23,7 +23,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Restructure Folders~~
 - [x] ~~Finish Author Section~~
 - [x] ~~Finish More Articles Section~~
-- [ ] Add Image Captions
+- [ ] Add Image Captionss
 - [ ] Add Subscribe Section
 - [ ] Add Share Section
 - [ ] Add Navigation

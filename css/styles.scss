@@ -144,6 +144,10 @@ aside {
         margin-bottom: 1*$em;
         text-align: left;
     }
+    h3.link {
+        text-align: right;
+        margin: -0.2*$em 0.3*$em 1*$em 0;
+    }
     section {
         padding: 0.2*$em 1.5*$em 0.2*$em 1.5*$em;
         margin: 3*$em 0;
@@ -153,18 +157,53 @@ aside {
     .subscribe {
         background: none;
         box-shadow: none;
-        padding: 0;
-        h2 {
-            padding: 1*$em 0;
+        padding: 1*$em 4*$em;
+        &, h2 {
             font-family: "Bree";
             font-weight: 600;
-            font-size: 3*$em;
             text-align: center;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
             color: $white;
-            line-height: 3*$em;
             text-shadow: 1px 1px 1px rgba($dust,0.1);
+        }
+        h2 {
+            padding: 0;
+            margin: 0 -1em;
+            font-size: 2.7*$em;
+            letter-spacing: -0.02em;
+            line-height: 3*$em;
+            text-transform: uppercase;
+        }
+        a {
+            position: relative;
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            width: 6*$em;
+            margin: -4*$em 0;
+            img, svg, .icon {
+                fill: $white;
+                position: absolute;
+                left: 0; right: 0;
+                top: 0; bottom: 0;
+                margin: auto;
+                height: 3.5*$em;
+                transition: all 0.5s;
+                -webkit-filter: drop-shadow(0 0 1px rgba($dust,0.1));
+                -webkit-transform: translateZ(0);
+            }
+            &:hover, &:focus {
+                text-decoration: none;
+                h4, .icon {
+                    fill: $green2;
+                    color: $green2;
+                }
+            }
+            h4 {
+                margin-top: 9.5*$em;
+                font-size: 1.5*$em;
+                text-transform: uppercase;
+                transition: all 0.5s;
+            }
         }
     }
     .author {
@@ -181,7 +220,7 @@ aside {
         }
     }
     .share {
-        display: none;
+        
     }
     .articles {
         &>a {
@@ -211,10 +250,6 @@ aside {
                 line-height: 1.2;
                 text-align: right;
             }
-        }
-        h3 {
-            text-align: right;
-            margin: -0.2*$em 0.3*$em 1*$em 0;
         }
     }
 }

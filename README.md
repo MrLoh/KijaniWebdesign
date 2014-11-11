@@ -24,7 +24,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Finish Author Section~~
 - [x] ~~Finish More Articles Section~~
 - [x] ~~Add Scrolling over the Header~~
-- [ ] Add Subscribe Section
+- [x] ~~Add Subscribe Section~~
 - [ ] Add Image Captionss
 - [ ] Add Share Section
 - [ ] Add Navigation

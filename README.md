@@ -25,7 +25,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Finish More Articles Section~~
 - [x] ~~Add Scrolling over the Header~~
 - [x] ~~Add Share and Subscribe Section~~
-- [ ] Add Image Captionss
+- [x] ~~Add Image Captionss~~
 - [ ] Add Navigation
 - [ ] Add Footer
 - [ ] Add Comments

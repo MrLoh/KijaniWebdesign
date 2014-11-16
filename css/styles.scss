@@ -12,7 +12,9 @@ html, body {
 	font-family: sans-serif;
 	line-height: 1.5*$em;
     color: $black;
-    background-color: $dust5;
+    background: $dust5;
+    position: relative;
+    z-index: -10;
 } 
 
 nav {
@@ -22,19 +24,60 @@ nav {
 header {
     width: 100%;
     font-size: $em;
-    height: 30*$em;
-    overflow-y: hidden;
-    position: fixed;
     top: 0;
-    z-index: -1;
-    #hero picture {
-        position: absolute;
+    .top {
+        position: fixed;
         top: 0;
-        img {
-            margin: 0 auto;
-            max-width: 2000px;
-            display: block;
-            margin-top: -12%;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        padding: 1*$em;
+        text-shadow: 1px 1px 1px rgba($dust,0.1);
+        svg {
+            position: absolute;
+            z-index: 10;
+            left: $em;
+            top: $em;
+            height: 5*$em;
+//            float: left;
+            -webkit-filter: drop-shadow(0 0 1px rgba($dust,0.1));
+            -webkit-transform: translateZ(0);
+            .logo {
+                fill: $white;
+                &:hover, &:focus {
+                    fill: $green;
+                }
+            }
+        }
+        .nav-button {
+            float: right;
+            font-family: "Blanch";
+            font-size: 4*$em;
+            font-weight: 500;
+            color: $white;
+            margin-right: 5*$em;
+            &:hover, &:focus {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+    .hero {
+        text-align: center;
+        width: 100%;
+        max-width: 2000px;
+        position: fixed;
+        top: 0;
+        picture {
+            height: 30*$em;
+            overflow-y: hidden;
+            display: inline-block;
+            z-index: -2;
+            img {
+                margin: 0 auto;
+                display: block;
+                margin-top: -15%;
+            }
         }
     }
 }
@@ -43,9 +86,13 @@ main {
     margin-top: 30*$em;
     width: 100%;   
     box-shadow: 0 -2px 2px rgba($dark-gray,0.5);
+    position: relative;
+    background: $dust5;
+    z-index: 1;
     .container{
         max-width: 67*$em;
         margin: 0 auto;
+//        padding-top: 3*$em;
     }
 }
 
@@ -55,14 +102,14 @@ article {
 	max-width: 44*$em;
     float: left;
     background-color: $white;
-    padding: 1*$em 5*$em 3*$em 5*$em;
+    padding: 1*$em 5*$em 3.5*$em 5*$em;
     box-sizing: border-box;
-    margin: 3*$em 0;
+    margin: 0;
     box-shadow: 0 0 0.1px rgba($dust,0.1);
 	h1 {
         width: 67*$em;
         height: 10*$em;
-        margin: -15*$em 0 7*$em -5*$em;
+        margin: -12*$em 0 3*$em -5*$em;
         padding: 0 2*$em;
         box-sizing: border-box;
         font-family: "Bree";
@@ -106,19 +153,37 @@ article {
         margin: 0;
 	}
 	figure {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
         img {
 		    width: 100%;
+            display: block;
+            position: relative;
         }
         figcaption {
-            font-family: "Bree";
-            font-weight: 300;
-            font-size: 0.8*$em;
-            line-height: 1*$em;
+            position: absolute;
+            bottom:0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 3.3*$em;
             padding: 0.5em 1em;
-            background-color: rgba($black,0.7);
+            font-family: "Bree";
+            font-weight: 100;
+            font-size: 0.9*$em;
+            line-height: 1.3*$em;
             color: $white;
-            margin-top: -0.6em;
-            display: none;
+            background-color: rgba($black,0.6);
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 0.4s, opacity 0.1s 0.3s;
+        }
+        &:hover, &:focus {
+            figcaption {
+                opacity: 1;
+                transform: translateY(0);
+                transition: transform 0.4s, opacity 0.1s;
+            }
         }
 	}
 }
@@ -153,7 +218,7 @@ aside {
         }
     }
     section {
-        padding: 0.2*$em 1.5*$em 0.2*$em 1.5*$em;
+        padding: 0.2*$em 1*$em 0.2*$em 1*$em;
         margin: 3*$em 0;
         background-color: $white;
         box-shadow: 0 0 1px rgba($dust,0.1);
@@ -161,7 +226,7 @@ aside {
     .subscribe {
         background: none;
         box-shadow: none;
-        margin: 5*$em 0 -2*$em 0;
+        margin: 2*$em 0 -1*$em 0;
         padding: 0;
         font-family: "Bree";
         font-weight: 600;
@@ -194,7 +259,8 @@ aside {
             }
             h4 {
                 margin-top: 3.7*$em;
-                font-size: 1.3*$em;
+                font-size: 1*$em;
+                line-height: 1.1*$em;
                 text-transform: uppercase;
                 transition: all 0.5s;
             }

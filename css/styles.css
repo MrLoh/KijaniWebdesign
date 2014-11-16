@@ -68,30 +68,39 @@ html, body {
   font-family: sans-serif;
   line-height: 24px;
   color: #191817;
-  background: #ece7e3;
+  background: #191817;
   position: relative;
   z-index: -10; }
 
 /* line 20, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+#center {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  background: #ece7e3;
+  position: relative;
+  z-index: -9; }
+
+/* line 29, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
 nav {
   display: none; }
 
-/* line 24, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+/* line 33, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
 header {
-  width: 100%;
-  font-size: 16px;
-  top: 0; }
-  /* line 28, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-  header .top {
+  font-size: 16px; }
+  /* line 35, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  header .top-bar {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1700px;
+    box-sizing: border-box;
+    padding: 16px;
     position: fixed;
     top: 0;
-    width: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 16px;
+    z-index: 1;
     text-shadow: 1px 1px 1px rgba(147, 130, 125, 0.1); }
-    /* line 36, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-    header .top svg {
+    /* line 45, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    header .top-bar svg {
       position: absolute;
       z-index: 10;
       left: 16px;
@@ -99,44 +108,37 @@ header {
       height: 80px;
       -webkit-filter: drop-shadow(0 0 1px rgba(147, 130, 125, 0.1));
       -webkit-transform: translateZ(0); }
-      /* line 45, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-      header .top svg .logo {
+      /* line 53, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+      header .top-bar svg .logo {
         fill: #f8f9f7; }
-        /* line 47, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-        header .top svg .logo:hover, header .top svg .logo:focus {
+        /* line 55, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+        header .top-bar svg .logo:hover, header .top-bar svg .logo:focus {
           fill: #499948; }
-    /* line 52, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-    header .top .nav-button {
+    /* line 60, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    header .top-bar .nav-button {
       float: right;
       font-family: "Blanch";
       font-size: 64px;
       font-weight: 500;
       color: #f8f9f7;
       margin-right: 80px; }
-      /* line 59, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-      header .top .nav-button:hover, header .top .nav-button:focus {
+      /* line 67, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+      header .top-bar .nav-button:hover, header .top-bar .nav-button:focus {
         text-decoration: none;
         color: #499948; }
-  /* line 65, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-  header .hero {
-    text-align: center;
+  /* line 74, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  header .hero-img picture {
     width: 100%;
-    max-width: 2000px;
+    max-width: 1700px;
     position: fixed;
     top: 0; }
-    /* line 71, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-    header .hero picture {
-      height: 480px;
-      overflow-y: hidden;
-      display: inline-block;
-      z-index: -2; }
-      /* line 76, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
-      header .hero picture img {
-        margin: 0 auto;
-        display: block;
-        margin-top: -15%; }
+    /* line 79, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    header .hero-img picture img {
+      margin: 0 auto;
+      display: block;
+      margin-top: -15%; }
 
-/* line 85, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+/* line 88, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
 main {
   margin-top: 480px;
   width: 100%;
@@ -144,12 +146,12 @@ main {
   position: relative;
   background: #ece7e3;
   z-index: 1; }
-  /* line 92, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 95, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   main .container {
     max-width: 1072px;
     margin: 0 auto; }
 
-/* line 99, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+/* line 102, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
 article {
   width: 100%;
   font-size: 16px;
@@ -160,7 +162,7 @@ article {
   box-sizing: border-box;
   margin: 0;
   box-shadow: 0 0 0.1px rgba(147, 130, 125, 0.1); }
-  /* line 109, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 112, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   article h1 {
     width: 1072px;
     height: 160px;
@@ -174,19 +176,19 @@ article {
     line-height: 80px;
     color: #f8f9f7;
     text-shadow: 2px 2px 2px rgba(113, 109, 105, 0.5); }
-  /* line 123, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 126, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   article p {
     font-family: "Volkorn";
     font-size: 19.2px;
     font-weight: 300;
     text-align: justify;
     margin-bottom: 24px; }
-    /* line 130, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 133, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     article p a {
       color: #499948;
       cursor: alias;
       text-decoration: none; }
-    /* line 135, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 138, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     article p:first-child:first-letter {
       float: left;
       color: #499948;
@@ -196,7 +198,7 @@ article {
       font-size: 176px;
       line-height: 48px;
       padding: 8.8px 0.8px 24px 0; }
-  /* line 146, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 149, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   article h2 {
     font-family: "Bree";
     letter-spacing: -0.02em;
@@ -204,17 +206,17 @@ article {
     font-weight: 600;
     line-height: 24px;
     margin: 0; }
-  /* line 155, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 158, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   article figure {
     position: relative;
     margin: 0;
     overflow: hidden; }
-    /* line 159, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 162, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     article figure img {
       width: 100%;
       display: block;
       position: relative; }
-    /* line 164, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 167, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     article figure figcaption {
       position: absolute;
       bottom: 0;
@@ -231,27 +233,27 @@ article {
       opacity: 0;
       transform: translateY(100%);
       transition: transform 0.4s, opacity 0.1s 0.3s; }
-    /* line 182, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 185, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     article figure:hover figcaption, article figure:focus figcaption {
       opacity: 1;
       transform: translateY(0);
       transition: transform 0.4s, opacity 0.1s; }
 
-/* line 191, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+/* line 194, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
 aside {
   font-size: 16px;
   width: 100%;
   max-width: 320px;
   float: right;
   box-sizing: border-box; }
-  /* line 197, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 200, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside h3 {
     font-family: "Bree";
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
     margin: 19.2px 0 -4.8px 0; }
-  /* line 204, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 207, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside p {
     font-family: "Bree";
     font-weight: 300;
@@ -259,21 +261,21 @@ aside {
     line-height: 16px;
     margin-bottom: 16px;
     text-align: left; }
-  /* line 212, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 215, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside h3.link {
     text-align: right;
     margin: -3.2px 4.8px 16px 0; }
-    /* line 215, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 218, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     aside h3.link a:hover {
       color: #499948;
       text-decoration: none; }
-  /* line 220, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 223, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside section {
     padding: 3.2px 16px 3.2px 16px;
     margin: 48px 0;
     background-color: #f8f9f7;
     box-shadow: 0 0 1px rgba(147, 130, 125, 0.1); }
-  /* line 226, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 229, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside .subscribe {
     background: none;
     box-shadow: none;
@@ -284,7 +286,7 @@ aside {
     text-align: center;
     color: #f8f9f7;
     text-shadow: 1px 1px 1px rgba(147, 130, 125, 0.1); }
-    /* line 236, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 239, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     aside .subscribe a {
       position: relative;
       display: block;
@@ -292,7 +294,7 @@ aside {
       box-sizing: border-box;
       width: 80px;
       margin: 0; }
-      /* line 243, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+      /* line 246, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
       aside .subscribe a svg, aside .subscribe a .icon {
         fill: #f8f9f7;
         position: absolute;
@@ -303,44 +305,44 @@ aside {
         transition: all 0.5s;
         -webkit-filter: drop-shadow(0 0 1px rgba(147, 130, 125, 0.1));
         -webkit-transform: translateZ(0); }
-      /* line 253, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+      /* line 256, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
       aside .subscribe a:hover, aside .subscribe a:focus {
         text-decoration: none; }
-        /* line 255, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+        /* line 258, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
         aside .subscribe a:hover h4, aside .subscribe a:hover .icon, aside .subscribe a:focus h4, aside .subscribe a:focus .icon {
           fill: #6dac6e;
           color: #6dac6e; }
-      /* line 260, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+      /* line 263, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
       aside .subscribe a h4 {
         margin-top: 59.2px;
         font-size: 16px;
         line-height: 17.6px;
         text-transform: uppercase;
         transition: all 0.5s; }
-  /* line 270, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 273, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside .author figure {
     width: 5.2em;
     height: 7.8em;
     float: left;
     overflow: hidden;
     margin: 16px 8px 0 0; }
-    /* line 276, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 279, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     aside .author figure img {
       width: 150%;
       margin-left: -30%; }
-  /* line 286, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+  /* line 289, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
   aside .articles > a {
     display: block;
     height: 10em;
     overflow: hidden;
     margin: 16px 0;
     position: relative; }
-    /* line 293, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 296, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     aside .articles > a:hover .green-overlay:after {
       opacity: 0.8;
       background: #6dac6e;
       -webkit-transform: translateZ(0); }
-    /* line 299, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
+    /* line 302, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/styles.scss */
     aside .articles > a h3 {
       display: inline-block;
       position: absolute;

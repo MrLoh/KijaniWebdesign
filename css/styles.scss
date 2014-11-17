@@ -2,6 +2,7 @@ $em: 16px;
 
 @import "colors";
 @import "general";
+@import "nav";
 
 
 html, body {
@@ -26,50 +27,8 @@ html, body {
     z-index: -9;
 }
 
-nav {
-	display: none;
-}
-
 header {
-    font-size: $em;
-    .top-bar {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1700px;
-        box-sizing: border-box;
-        padding: 1*$em;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        text-shadow: 1px 1px 1px rgba($dust,0.1);
-        svg {
-            position: absolute;
-            z-index: 10;
-            left: $em;
-            top: $em;
-            height: 5*$em;
-            -webkit-filter: drop-shadow(0 0 1px rgba($dust,0.1));
-            -webkit-transform: translateZ(0);
-            .logo {
-                fill: $white;
-                &:hover, &:focus {
-                    fill: $green;
-                }
-            }
-        }
-        .nav-button {
-            float: right;
-            font-family: "Blanch";
-            font-size: 4*$em;
-            font-weight: 500;
-            color: $white;
-            margin-right: 5*$em;
-            &:hover, &:focus {
-                text-decoration: none;
-                color: $green;
-            }
-        }
-    }
+    font-size: $em;@import "colors";
     .hero-img {
         picture {
             width: 100%;
@@ -146,6 +105,9 @@ article {
 			color: $green;
 			cursor: alias;
             text-decoration: none;
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
 		}
 		&:first-child:first-letter { 
 			float: left; 
@@ -160,7 +122,6 @@ article {
     }
     h2 {
         font-family: "Bree";
-//        font-family: "Vollkorn";
         letter-spacing: -0.02em;
         font-size: 1.5*$em;
         font-weight: 600;
@@ -275,6 +236,7 @@ aside {
                 h4, .icon, .icon:hover {
                     fill: $green2;
                     color: $green2;
+                    transition: fill 0.5s, color 0.4s;
                 }
             }
             h4 {
@@ -325,7 +287,7 @@ aside {
                 text-align: right;
                 transition: all 0.3s;
             }
-            &:after {
+            &::after {
                 content: "read article";
                 padding: 8*$em 2*$em 0 1*$em;
                 color: $green;
@@ -347,7 +309,7 @@ aside {
                     padding: 1*$em 2*$em;
 //                    -webkit-transform: translateZ(0);
                 }
-                &:after {
+                &::after {
                     opacity: 1;
                     -webkit-transform: translate3d(0,0,0);
                     transition: -webkit-transform 0.3s, opacity 0.1s;

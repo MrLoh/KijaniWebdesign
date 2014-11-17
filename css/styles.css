@@ -58,6 +58,10 @@ picture, figure {
 .light-shadow {
   box-shadow: 0 0 1px rgba(147, 130, 125, 0.1); }
 
+/* line 61, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/general */
+.overflow-hidden {
+  overflow: hidden; }
+
 /* line 4, /Users/tolo/Dropbox/Data/kijani/Design/Blog/BlogTemplate v1.2/css/nav */
 .top-bar {
   margin: 0 auto;

@@ -28,6 +28,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Add Image Captionss~~
 - [x] ~~Add Navigation~~
 - [ ] Create Mobile Styles
+- [ ] Add Navbar on Scroll Up
 - [ ] Add Footer
 - [ ] Add Comments
 

@@ -286,33 +286,36 @@ aside {
         
     }
     .articles {
-        &>a {
+        &>.article-box {
             display: block;
             height: 10em;
             overflow: hidden;
             margin: 1*$em 0;
             position: relative;
-            &:hover {
-                .green-overlay:after {
-                    opacity: 0.8;
-                    background: $green2;
-                    -webkit-transform: translateZ(0);
-                }
-            }
             h3 {
                 display: inline-block;
                 position: absolute;
-                top: 0; left: 0;
+                top: 0; right: 0;
                 width: 100%; height: 100%;
                 box-sizing: border-box;
                 margin: 0;
-                padding: 1*$em;
+                padding: 2.5*$em 2*$em;
                 z-index: 1;
                 color: $white;
                 font-size: 1.8*$em;
                 font-weight: 500;
-                line-height: 1.2;
+                line-height: 2*$em;
                 text-align: right;
+                transition: all 0.3s;
+            }
+            &:hover {
+                h3 {
+                    color: $green;
+                    background: $white;
+                    opacity: 0.8;
+                    padding: 2*$em 2*$em;
+                    -webkit-transform: translateZ(0);
+                }
             }
         }
     }

@@ -11,11 +11,11 @@ Feel free to contribute to this by sending me pull requests.
 
 ## Requirements
 
-This repository only includes Sass files, please compile with the latest Sass. The code has been written with [Brackets](http://brackets.io), which I can recommend for editing this as well. Sass compiling can then easily be done with the [Bracket Sass Plugin](https://github.com/jasonsanjose/brackets-sass).
+This CSS is written in Sass, please use the latest Sass to contribute. The code has been written with [Brackets](http://brackets.io), which I can recommend for editing this as well. Sass compiling can then easily be done with the [Bracket Sass Plugin](https://github.com/jasonsanjose/brackets-sass).
 
 The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since this is not for actual distribution, let's keep it like that for simplicity sake. 
 
-This does not include font files. To work properly you need to install the Fonts [Bree](http://www.type-together.com/Bree), [Vollkorn](http://vollkorn-typeface.com/) and [Blanch](http://www.atipus.com/design-identity-blanch-font/). Please contact me, if you need the fonts I can't distribute them publicly.
+<!--This does not include font files. To work properly you need to install the Font [Bree](http://www.type-together.com/Bree). Please contact me, if you need the font, but I can't distribute it publicly.-->
 
 ## Todos
 - [x] ~~Implement Basic Article Style~~
@@ -27,7 +27,7 @@ This does not include font files. To work properly you need to install the Fonts
 - [x] ~~Add Share and Subscribe Section~~
 - [x] ~~Add Image Captionss~~
 - [x] ~~Add Navigation~~
-- [ ] Create Mobile Styles
+- [x] ~~Create Mobile Styles~~
 - [ ] Add Navbar on Scroll Up
 - [ ] Add Footer
 - [ ] Add Comments

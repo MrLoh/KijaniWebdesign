@@ -1,6 +1,3 @@
-$em: 16px;
-@import "colors";
-
 .top-bar {
     margin: 0 auto;
     width: 100%;
@@ -42,9 +39,9 @@ $em: 16px;
             -webkit-transform: scale(1.05) translateZ(0);
         }
         .menu-text {
-            font-family: "Blanch";
+            font-family: $accent-type;
             font-size: 4.6*$em;
-            font-weight: 500;
+            font-weight: normal;
             line-height: 2*$em;
             margin-right: 4.2*$em;
             color: $white;
@@ -111,6 +108,43 @@ $em: 16px;
             }
         }
     }
+    @media screen and (max-width: 700px) {
+        top: -25*$em;
+    }
+    @media screen and (max-width: 480px) {
+        top: -22*$em;
+        svg {
+            left: 1*$em;
+            height: 2*$em;
+            &:hover, &:focus {
+                -webkit-transform: translateZ(0);
+            }
+        }
+        .nav-trigger {
+            &:hover, &:focus {
+                -webkit-transform: none;
+            }
+            .menu-text {
+                font-size: 3.3*$em;
+                margin-right: 2.4*$em;
+            }
+            .menu-icon {
+                margin-left: 2.5*$em;
+                width: 2*$em;
+                height: 0.19*$em;
+                top: 47%;
+                &::before {
+                top: -0.5*$em;
+                }
+                &::after {
+                    top: 0.5*$em;
+                }
+            }
+            &.clicked .menu-icon {
+                width: 2.4*$em;
+            }
+        }
+    }
 }
 
 nav {
@@ -120,9 +154,10 @@ nav {
     height: 100%;
     background: $dark-gray;
     z-index: 9;
-    padding: 5*$em 2*$em 0 2*$em;
+    padding: 3*$em 0 0 0;
     -webkit-transform: translateY(-100%);
     transition: -webkit-transform 0.6s;
+    overflow: hidden;
     ul {
         list-style: none;
         margin: 0;
@@ -133,9 +168,9 @@ nav {
             padding: 0;
         }
         h3 {
-            font-family: "Blanch";
+            font-family: $accent-type;
             font-size: 2.5*$em;
-            font-weight: 700;
+            font-weight: normal;
             text-transform: uppercase;
             color: $green2;
             line-height: 2*$em;
@@ -145,7 +180,7 @@ nav {
             display: block;
             width: 20*$em;
             margin: 0 auto;
-            font-family: "Bree";
+            font-family: $headline-type;
             font-size: 2.6*$em;
             font-weight: 500;
             line-height: 3.2*$em;
@@ -177,6 +212,32 @@ nav {
     }
     &.active {
         -webkit-transform: translateY(0);
+    }
+    @media screen and (max-width: 480px) {
+        padding-top: 3*$em;
+        ul {
+            h3 {
+                font-size: 1.7*$em;
+                line-height: 1*$em;
+                margin-top: 1.5*$em;
+            }
+            a {
+                font-size: 1.4*$em;
+                line-height: 1.5*$em;
+                &:hover, &:focus {
+                    -webkit-transform: none;
+                }
+            }
+            &.follow {
+                padding: 0.5*$em 4*$em;
+                a {
+                    width: 3*$em;
+                    svg {
+                        width: 1.4*$em;
+                    }
+                }
+            }
+        }
     }
 }
 

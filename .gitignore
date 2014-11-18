@@ -1,3 +1,4 @@
 *.css.map
+*.pcvd
 .sass-cache/*
 stylesheets

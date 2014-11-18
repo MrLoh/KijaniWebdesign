@@ -37,8 +37,8 @@ picture, figure {
 
 .title {
 	color: $green;
-	font-family: "Blanch";
-	font-weight: 700;
+	font-family: $accent-type;
+	font-weight: normal;
     font-size: 3*$em;
     line-height: 2*$em;
     margin: 0.7*$em 0 -0.2*$em 0;

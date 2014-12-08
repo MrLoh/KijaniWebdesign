@@ -12,21 +12,21 @@
         left: 1.7*$em;
         top: 1*$em;
         height: 2.8*$em;
-        -webkit-filter: drop-shadow(2px 2px 2px rgba($dark-gray,0.5));
-        -webkit-transform: translateZ(0);
+        filter: drop-shadow(2px 2px 2px rgba($dark-gray,0.5));
+        transform: translateZ(0);
         transition: all 0.1s;
         .logo {
             fill: $white;
         }
         &:hover, &:focus {
-            -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
         }
     }
     &.nav-active {
         position: fixed;
-        top: 0; 
+        top: 0;
         svg {
-            -webkit-filter: none;
+            filter: none;
         }
     }
     .nav-trigger {
@@ -36,13 +36,13 @@
         right: 1*$em;
         cursor: pointer;
         &:hover, &:focus {
-            -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
         }
         .menu-text {
             font-family: $accent-type;
             font-size: 4.6*$em;
             font-weight: normal;
-            line-height: 2*$em;
+            line-height: 2.5*$em;
             margin-right: 4.2*$em;
             color: $white;
             transition: all 0.15s;
@@ -57,7 +57,7 @@
             top: 44%;
             bottom: auto;
             right: auto;
-            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
             width: 2.8*$em;
             height: 0.3*$em;
             background-color: $white;
@@ -71,7 +71,7 @@
                 width: 100%; height: 100%;
                 right: 0;
                 background-color: $white;
-                transition: -webkit-transform 0.3s, top 0.2s, box-shadow 0.1s;
+                transition: transform 0.3s, top 0.2s, box-shadow 0.1s;
                 box-shadow: 1px 1px 2px rgba($dark-gray,0.5);
                 border-radius: 0.15*$em;
             }
@@ -97,13 +97,13 @@
                     background-color: $white;
                     box-shadow: none;
                     transition: box-shadow 0.1s;
-                    transition: -webkit-transform 0.3s, top 0.2s, box-shadow 0.4s;
+                    transition: transform 0.3s, top 0.2s, box-shadow 0.4s;
                 }
                 &::before {
-                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
                 }
                 &::after {
-                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
                 }
             }
         }
@@ -117,12 +117,12 @@
             left: 1*$em;
             height: 2*$em;
             &:hover, &:focus {
-                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
             }
         }
         .nav-trigger {
             &:hover, &:focus {
-                -webkit-transform: none;
+                transform: none;
             }
             .menu-text {
                 font-size: 3.3*$em;
@@ -155,8 +155,9 @@ nav {
     background: $dark-gray;
     z-index: 9;
     padding: 3*$em 0 0 0;
-    -webkit-transform: translateY(-100%);
-    transition: -webkit-transform 0.6s;
+    transform: translateY(-100%);
+    display: none\9; /* IE8 and below */;
+    transition: transform 0.6s;
     overflow: hidden;
     ul {
         list-style: none;
@@ -168,10 +169,10 @@ nav {
             padding: 0;
         }
         h3 {
-            font-family: $accent-type;
-            font-size: 2.5*$em;
-            font-weight: normal;
-            text-transform: uppercase;
+            font-family: $headline-type;
+            font-size: 2*$em;
+            font-weight: 700;
+            letter-spacing: 0.01em;
             color: $green2;
             line-height: 2*$em;
             margin: 2*$em 0 0.5*$em 0;
@@ -180,22 +181,22 @@ nav {
             display: block;
             width: 20*$em;
             margin: 0 auto;
-            font-family: $headline-type;
-            font-size: 2.6*$em;
-            font-weight: 500;
+            font-family: $accent-type;
+            font-size: 3.5*$em;
+            font-weight: normal;
             line-height: 3.2*$em;
             letter-spacing: 0.1*$em;
             text-transform: capitalize;
             color: $white;
             transition: all 0.2s;
             &:hover, &:focus {
-                -webkit-transform: scale(1.2) translateZ(0);
+                transform: scale(1.2) translateZ(0);
             }
         }
         &.follow {
             width: 20*$em;
             margin: 0 auto;
-            padding: 0.5*$em 2*$em;
+            padding: 0*$em 2*$em;
             box-sizing: border-box;
             a {
                 display: inline-block;
@@ -211,7 +212,7 @@ nav {
         }
     }
     &.active {
-        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
     @media screen and (max-width: 480px) {
         padding-top: 3*$em;
@@ -225,7 +226,7 @@ nav {
                 font-size: 1.4*$em;
                 line-height: 1.5*$em;
                 &:hover, &:focus {
-                    -webkit-transform: none;
+                    transform: none;
                 }
             }
             &.follow {
@@ -240,8 +241,3 @@ nav {
         }
     }
 }
-
-
-
-
-

@@ -1,8 +1,22 @@
 jQuery(document).ready(function($){
+
     $('.nav-trigger').on('click', function(){
-		$('.nav-trigger').toggleClass('clicked'); 
-        $('.top-bar').toggleClass('nav-active'); 
-        $('nav').toggleClass('active');
-        $('body').toggleClass('overflow-hidden');
-	}); 
+        $('.nav-trigger').toggleClass('clicked');
+        $('.top-bar').toggleClass('nav-active');
+
+        // $('nav').toggleClass('active');
+        // $('body').removeClass('overflow-hidden');
+        // doesn't work, because in Firefox transitions break when parent overflow is changed, so instead:
+        if( $('nav').hasClass('active') ) {
+            $('nav').removeClass('active').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+                $('body').removeClass('overflow-hidden');
+            });
+        } else {
+            $('nav').addClass('active').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+                $('body').addClass('overflow-hidden');
+            });
+        }
+    });
+
 });
+

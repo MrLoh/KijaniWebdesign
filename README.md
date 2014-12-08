@@ -28,9 +28,13 @@ The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since th
 - [x] ~~Add Image Captionss~~
 - [x] ~~Add Navigation~~
 - [x] ~~Create Mobile Styles~~
+- [x] ~~Make Crossbrowser Compatible~~
+- [ ] Add Citation Styles
+- [ ] Add List Styles
+- [ ] Add Archive Page
+- [ ] Add Comments
 - [ ] Add Navbar on Scroll Up
 - [ ] Add Footer
-- [ ] Add Comments
 
 ## Current Status
 Visit the page life at: [mrloh.github.io/kijaniwebdesign](http://mrloh.github.io/KijaniWebdesign/)

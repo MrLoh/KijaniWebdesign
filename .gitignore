@@ -1,5 +1,5 @@
 *.css.map
 *.pcvd
-.sass-cache/*
+css/.sass-cache/*
 stylesheets
 node_modules/*

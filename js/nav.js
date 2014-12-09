@@ -33,8 +33,10 @@ jQuery(document).ready(function($){
                     $('.top-bar').removeClass('inactive');
                     $('.top-bar').addClass('active');
                 } else { // scrolling down
-                    $('.top-bar').removeClass('active');
-                    $('.top-bar').addClass('inactive');
+                    if (!$('.top-bar').hasClass('nav-active')){
+                        $('.top-bar').removeClass('active');
+                        $('.top-bar').addClass('inactive');
+                    }
                 }
             }
         }

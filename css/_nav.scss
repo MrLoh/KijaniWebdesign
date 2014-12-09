@@ -36,7 +36,7 @@
     &.nav-slide-in {
         position: fixed;
         top: 0;
-        background-color: rgba($dark-gray, 0.95);
+        background-color: rgba($dark-gray, 1);
         box-shadow: 0 0 8px $dark-gray;
         transform: translateY(-120%);
         transition: all 0s;
@@ -133,7 +133,9 @@
     }
     @media screen and (max-width: 480px) {
         top: -22*$em;
+        height: 3.2*$em;
         svg {
+            top: 0.6*$em;
             left: 1*$em;
             height: 2*$em;
             &:hover, &:focus {
@@ -141,6 +143,7 @@
             }
         }
         .nav-trigger {
+            margin-top: -0.6*$em;
             &:hover, &:focus {
                 transform: none;
             }

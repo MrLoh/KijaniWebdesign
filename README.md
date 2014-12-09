@@ -29,11 +29,11 @@ The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since th
 - [x] ~~Add Navigation~~
 - [x] ~~Create Mobile Styles~~
 - [x] ~~Make Crossbrowser Compatible~~
+- [x] ~~Add List Styles~~
 - [ ] Add Citation Styles
-- [ ] Add List Styles
+- [ ] Add Navbar on Scroll Up
 - [ ] Add Archive Page
 - [ ] Add Comments
-- [ ] Add Navbar on Scroll Up
 - [ ] Add Footer
 
 ## Current Status

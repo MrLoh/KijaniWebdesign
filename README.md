@@ -11,11 +11,12 @@ Feel free to contribute to this by sending me pull requests.
 
 ## Requirements
 
-This CSS is written in Sass, please use the latest Sass to contribute. The code has been written with [Brackets](http://brackets.io), which I can recommend for editing this as well. Sass compiling can then easily be done with the [Bracket Sass Plugin](https://github.com/jasonsanjose/brackets-sass).
+This directory includes no backend. Therefore no local server is needed to run it. The fonts are partially provided through my Typekit, but should be accessible on localhost as well.
 
-The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since this is not for actual distribution, let's keep it like that for simplicity sake.
+The styles are written in Sass. Grunt is included for running Autoprefixer (enables cross-browser compatibility), Sass compiling, and CSS/JS minifying. To use it:
 
-<!--This does not include font files. To work properly you need to install the Font [Bree](http://www.type-together.com/Bree). Please contact me, if you need the font, but I can't distribute it publicly.-->
+1. Run `npm install` once to install dependencies.
+2. Use `grunt` to prefix, sass compile and minify, or `grunt watch` to automatically compile on save.
 
 ## Todos
 - [x] ~~Implement Basic Article Style~~

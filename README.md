@@ -31,7 +31,7 @@ The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since th
 - [x] ~~Make Crossbrowser Compatible~~
 - [x] ~~Add List Styles~~
 - [x] ~~Add Navbar on Scroll Up~~
-- [ ] Add Citation Styles
+- [x] ~~Add Citation Styles~~
 - [ ] Add Archive Page
 - [ ] Add Comments
 - [ ] Add Footer

@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
     });
 
     var height = 100;
-    $(window).on('scroll', {prevTop: 0}, function () {
+    $(window).on('scroll', {prevTop: 0}, function () { 
         var currTop = $(window).scrollTop();
         if ( currTop < 1) {
             $('.top-bar').removeClass('nav-slide-in');

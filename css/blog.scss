@@ -231,7 +231,7 @@ article {
         border-left: solid 0.15*$em $black;
         background: rgba($black, 0.025);
         margin: 0 0.5*$em;
-        padding: 0.3*$em 4*$em 0.01*$em 1.5*$em;
+        padding: 0.3*$em 4*$em 0.5*$em 1.5*$em;
         font-family: $body-type;
         font-style: italic;
         cite {
@@ -284,6 +284,9 @@ article {
             figcaption {
                 font-size: 0.75*$em; 
             }
+        }
+        blockquote {
+            padding-right: 2*$em;
         }
     }
 }

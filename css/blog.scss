@@ -160,7 +160,7 @@ article {
 			cursor: alias;
             @include underline($white);
 		}
-    } 
+    }
     ul, ol, ul li,ol li {
         font-family: $body-type;
         line-height: 1.5*$em;
@@ -349,7 +349,7 @@ aside {
             }
             p {
                 font-family: $body-type;
-                font-size: 1.1*$em;
+                font-size: 1*$em;
                 font-weight: normal;
                 line-height: 1.5*$em;
             }

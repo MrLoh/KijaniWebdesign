@@ -30,8 +30,8 @@ The code is only optimized for Webkit Browsers, i.e. Chrome and Safari. Since th
 - [x] ~~Create Mobile Styles~~
 - [x] ~~Make Crossbrowser Compatible~~
 - [x] ~~Add List Styles~~
+- [x] ~~Add Navbar on Scroll Up~~
 - [ ] Add Citation Styles
-- [ ] Add Navbar on Scroll Up
 - [ ] Add Archive Page
 - [ ] Add Comments
 - [ ] Add Footer

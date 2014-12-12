@@ -33,9 +33,10 @@ The styles are written in Sass. Grunt is included for running Autoprefixer (enab
 - [x] ~~Add List Styles~~
 - [x] ~~Add Navbar on Scroll Up~~
 - [x] ~~Add Citation Styles~~
+- [x] ~~Add Archive Page~~
 - [ ] Add Comments
 - [ ] Add Footer
-- [ ] Add Archive Page
+- [ ] Add Social Media to Archive Page
 
 ## Current Status
 Visit the page life at: [mrloh.github.io/kijaniwebdesign](http://mrloh.github.io/KijaniWebdesign/)

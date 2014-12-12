@@ -1,3 +1,35 @@
+@import "colors";
+@import "fonts/blanch";
+
+$em: 16px;
+$accent-type: "Blanch", "Futura", sans-serif;
+$headline-type: "bree", "Futura", sans-serif;
+$body-type: "merriweather", "Georgia", serif;
+
+$max-width: 1920px;
+
+html, body { 
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: $em;
+	font-family: sans-serif;
+	line-height: 1.5*$em;
+    color: $black;
+    background: $dark-gray;
+    position: relative;
+    z-index: -10;
+}
+
+#center {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    background: $dust5;
+    position: relative;
+    z-index: -9;
+}
+
 @mixin underline($background-color) {
     text-shadow: 3px 0 0 $background-color, -3px 0 0 $background-color;
     background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );

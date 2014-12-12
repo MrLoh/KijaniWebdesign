@@ -1,38 +1,5 @@
-$em: 16px;
-$accent-type: "Blanch", "Futura", sans-serif;
-$headline-type: "bree", "Futura", sans-serif;
-$body-type: "merriweather", "Georgia", serif;
-
-$max-width: 1920px;
-
-@import "colors";
 @import "general";
 @import "nav";
-
-@import "fonts/blanch";
-
-
-html, body { 
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: $em;
-	font-family: sans-serif;
-	line-height: 1.5*$em;
-    color: $black;
-    background: $dark-gray;
-    position: relative;
-    z-index: -10;
-}
-
-#center {
-    width: 100%;
-    max-width: $max-width;
-    margin: 0 auto;
-    background: $dust5;
-    position: relative;
-    z-index: -9;
-}
 
 header {
     font-size: $em;
@@ -103,7 +70,7 @@ article {
     padding: 1*$em 5*$em 3.5*$em 5*$em;
     box-sizing: border-box;
     margin: 0;
-    box-shadow: 0 0 0.1px rgba($dust,0.1);
+    box-shadow: 0 0 1px rgba($dust,0.1);
 	h1 {
         width: 67*$em;
         height: 10*$em;
@@ -495,6 +462,17 @@ aside {
                 }
             }
         }
+		.archive-link {
+			font-family: $headline-type;
+		  	font-size: 1*$em;
+			text-align: right;
+		  	padding-right: 0.5*$em;
+		  	margin: -0.2*$em 0 0.2*$em 0;
+		  	transition: color 0.3s;
+		  	&:hover, &:focus {
+			  	color: $green;
+			}
+		}
         @media screen and (max-width: 1040px) {
             padding-bottom: 3*$em;
             .article-box {

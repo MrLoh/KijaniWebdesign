@@ -8,13 +8,14 @@ $body-type: "merriweather", "Georgia", serif;
 
 $max-width: 1920px;
 
-html, body { 
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: $em;
-	font-family: sans-serif;
-	line-height: 1.5*$em;
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: $em;
+    font-family: sans-serif;
+    line-height: 1.5*$em;
     color: $black;
     background: $dark-gray;
     position: relative;
@@ -54,7 +55,7 @@ picture, figure {
     width: 100%;
     margin: 0;
     img {
-    	width: 100%;
+        width: 100%;
         transition: all 1s;
     }
     &.green-overlay::after {
@@ -79,9 +80,9 @@ picture, figure {
 }
 
 .title {
-	color: $green;
-	font-family: $accent-type;
-	font-weight: normal;
+    color: $green;
+    font-family: $accent-type;
+    font-weight: normal;
     font-size: 3*$em;
     line-height: 2*$em;
     margin: 0.7*$em 0 -0.2*$em 0;
@@ -103,4 +104,5 @@ picture, figure {
 
 .overflow-hidden {
     overflow: hidden;
+    height: 100vh;
 }

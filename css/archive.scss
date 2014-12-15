@@ -12,6 +12,7 @@ main {
     position: relative;
     background: $dust5;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
 	}
 }
 
-.subscribe { 
+.subscribe {
 	font-size: $em;
 	width: 30*$em;
 	position: relative;

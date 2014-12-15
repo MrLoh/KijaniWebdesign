@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
         $('.top-bar').toggleClass('nav-active');
 
         // $('nav').toggleClass('active');
-        // $('body').removeClass('overflow-hidden');
+        // $('body').toggleClass('overflow-hidden');
         // doesn't work, because in Firefox transitions break when parent overflow is changed, so instead:
         if( $('nav').hasClass('active') ) {
             $('nav').removeClass('active').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
@@ -17,10 +17,10 @@ jQuery(document).ready(function($){
             });
         }
     });
-	
-	if (!$('nav').hasClass('fixed')) {
+
+	if (!$('main').hasClass('fixed-nav')) {
 		var height = 100;
-		$(window).on('scroll', {prevTop: 0}, function () { 
+		$(window).on('scroll', {prevTop: 0}, function () {
 			var currTop = $(window).scrollTop();
 			if ( currTop < 1) {
 				$('.top-bar').removeClass('nav-slide-in');

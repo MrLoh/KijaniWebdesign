@@ -6,6 +6,7 @@
   font-style: normal; }
 
 html, body {
+  overflow-x: hidden;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -80,7 +81,8 @@ picture, figure {
   box-shadow: 0 0 1px rgba(147, 130, 125, 0.1); }
 
 .overflow-hidden {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh; }
 
 .top-bar {
   margin: 0 auto;
@@ -337,11 +339,11 @@ nav {
               -ms-transform: none;
                   transform: none; }
       nav ul.follow {
-        padding: 1.6px 64px; }
+        padding: 4px 64px; }
         nav ul.follow a {
-          width: 48px; }
+          width: 38.4px; }
           nav ul.follow a svg {
-            width: 22.4px; } }
+            width: 25.6px; } }
 
 header {
   font-size: 16px; }
@@ -421,7 +423,7 @@ article {
     text-shadow: 2px 2px 2px rgba(113, 109, 105, 0.5); }
     @media screen and (max-width: 1040px) {
       article h1 {
-        font-size: 64px;
+        font-size: 59.2px;
         padding: 0 8px;
         margin: -192px -15% 48px -15%;
         width: 130%;
@@ -567,7 +569,8 @@ article {
     article {
       padding: 16px 5% 56px 5%; }
       article p, article ol, article ul, article li {
-        font-size: 14.4px; }
+        font-size: 14.4px;
+        text-align: left; }
       article ul li::before {
         font-size: 20.8px; }
       article h2 {
@@ -767,6 +770,7 @@ aside {
   aside .articles .archive-link {
     font-family: "bree", "Futura", sans-serif;
     font-size: 16px;
+    font-weight: 700;
     text-align: right;
     padding-right: 8px;
     margin: -3.2px 0 3.2px 0;
@@ -780,11 +784,14 @@ aside {
       aside .articles .article-box {
         float: left;
         width: 48%;
-        margin: 3% 0 0 0; }
+        margin: 2% 0 2% 0; }
         aside .articles .article-box:nth-child(even) {
           margin-right: 4%; }
         aside .articles .article-box h3 {
-          padding: 40px 16px; } }
+          padding: 40px 16px; }
+      aside .articles .archive-link {
+        letter-spacing: -0.02em;
+        font-size: 24px; } }
   @media screen and (max-width: 520px) {
     aside .articles .article-box {
       width: 100%;

@@ -2,8 +2,8 @@
 @import "fonts/blanch";
 
 $em: 16px;
-$accent-type: "Blanch", "Futura", sans-serif;
-$headline-type: "bree", "Futura", sans-serif;
+$accent-type: "Blanch", "Ubuntu Condensed", "Futura", sans-serif;
+$headline-type: "bree", "Ubuntu Condensed", "Futura", sans-serif;
 $body-type: "merriweather", "Georgia", serif;
 
 $max-width: 1920px;
@@ -11,6 +11,7 @@ $max-width: 1920px;
 html, body {
     overflow-x: hidden;
     width: 100%;
+	min-height: 100%;
     margin: 0;
     padding: 0;
     font-size: $em;
@@ -31,6 +32,20 @@ html, body {
     z-index: -9;
 }
 
+.default-back {
+	background: $green3 url(./back.jpg) repeat;
+	background-size: 750px;
+	@media screen and (max-width: 1023px) {
+		background-size: 600px;
+	}
+	@media screen and (max-width: 590px) {
+		background-size: 450px;
+	}
+	@media screen and (max-width: 380px) {
+		background-size: 300px;
+	}
+}
+
 @mixin underline($background-color) {
     text-shadow: 3px 0 0 $background-color, -3px 0 0 $background-color;
     background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
@@ -38,6 +53,30 @@ html, body {
     background-position: 0 95%;
     -webkit-background-size: 100% 1.5px;
     background-size: 100% 1.5px;
+}
+
+@mixin hyphenate {
+    -ms-word-break: break-all;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $color;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: $color;
+	   opacity: 1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color: $color;
+	}
 }
 
 .center {
@@ -67,6 +106,7 @@ picture, figure {
         top: 0; left: 0;
         z-index: 1;
         transition: all 0.5s;
+		border-radius: inherit;
     }
 }
 
@@ -105,4 +145,8 @@ picture, figure {
 .overflow-hidden {
     overflow: hidden;
     height: 100vh;
+}
+
+.hidden {
+	display: none;
 }
